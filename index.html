@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./output.css">
+  <link rel="stylesheet" href="better.css">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="Nav.js" defer></script>
+  <title>Seth Industry</title>
+</head>
+
+<body>
+  <script>
+    function redirectToPage(event) {
+      // Check if the Enter key (key code 13) was pressed
+      if (event.keyCode === 13) {
+        // Prevent the default action of the Enter key
+        event.preventDefault();
+        // Get the input value
+        var inputValue = document.getElementById('inputField').value;
+        // Redirect to the specified page (change 'anotherpage.html' to your target page)
+        window.location.href = 'search.html';
+      }
+    }
+  </script>
+
+  <body>
+    <nav class="nav">
+      <i class="uil uil-bars navOpenBtn"></i>
+      <img src="images/logo.webp" class="logo"></img>
+
+      <ul class="nav-links">
+        <i class="uil uil-times navCloseBtn"></i>
+        <li><a href="#" class="active"><i class="fa fa-home" aria-hidden="true"></i> HOME</a></li>
+        <li><a href="navbar-pages/product.html">STORES</a></li>
+        <li><a href="navbar-pages/socials.html">SOCIALS</a></li>
+        <li><a href="navbar-pages/community.html">COMMUNITY</a></li>
+        <li><a href="navbar-pages/contact.html">CONTACT</a></li>
+      </ul>
+
+      <i class="uil uil-search search-icon" id="searchIcon"></i>
+      <div class="search-box">
+        <i class="uil uil-search search-icon"></i>
+        <input type="text" id="inputField" onkeypress="redirectToPage(event)" placeholder="Seach here..." />
+      </div>
+    </nav>
+    <main>
+      <div class="relativer mx-auto p-20" id="padding">
+
+        <div class="flex items-center justify-between"></div>
+
+        <!-- Mobile -->
+        <div class="md:hidden">
+          <div id="menu"
+            class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+          </div>
+        </div>
+      </div>
+
+
+      <section id="hero">
+        <!-- Flex Container -->
+        <div class="container flex flex-col-reverse items-center px-6 mx-auto mt-10 space-y-0 md:space-y-0 md:flex-row">
+          <!-- Left item -->
+          <div class="flex flex-col mb-32 mt-20 space-y-12 md:w-1/2">
+            <div class="outer">
+              <h1 class="font-light text-4xl">Magnificent
+                <div class="inner">
+                  <span
+                    class="text-3.5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-purple-600">
+                    uniqeue designs<br>
+                    Digital Products<br>
+                    Designer Package<br>
+                    ToolKit Packages<br>
+                    community
+
+                  </span>
+                </div> is created by <span
+                  class="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">SETH
+                  INDUSTRY</span>
+              </h1>
+            </div>
+
+            <p class="max-w-50 text-center md:text-left">
+              Specializes in creating and selling innovative digital products, including Tool-Kit , and Digital Tools.
+              Focused on quality and user experience, deliver cutting-edge solutions that meet the evolving needs of
+              businesses and consumers.
+            </p>
+            <div class="space-x-10 cursor-pointer ">
+              <a class=" p-4 border-2 rounded-md text-white" id="buy"><i class="fa-brands fa-discord"></i> Join
+                Community </a>
+            </div>
+            <div class="flex justify-center md:justify-start">
+            </div>
+          </div>
+
+          <!-- Image -->
+          <div class="">
+            <img src="images/39C03828-EAD5-4765-A824-A3A6A4041A07 (1).gif" alt="" />
+          </div>
+        </div>
+      </section>
+
+
+      <section id="features">
+
+        <div class="container flex flex-col mx-auto mt-10 space-y-12 md:space-y-0 md:flex-row">
+          <!-- DesignMockup -->
+          <div class="flex flex-col space-y-10 md:w-1/2">
+            <img src="images/42779658-F17A-4E0B-82EE-7A682C9893DB.gif" class="mr-5">
+          </div>
+
+
+          <div class="flex flex-col space-y-8 md:w-1/2">
+            <h2 class="text-3xl font-bold" id="h2">
+              <span class="text-3xl text-purple-500">Seth™</span> <span class="text-gray-600">Industry Activities</span>
+            </h2>
+
+            <div class="flex" id="flex">
+              <div class="card mr-6" id="card1">
+                <img src="images/IMG_7060.webp">
+                <div class="font-medium text-black" id="text">Research</div>
+                <p class="text-black font-light mt-2" id="p">investigating and sources to establish facts and reach new
+                  conclusions.
+              </div>
+              <div class="card mr-6" id="card1">
+                <img src="images/IMG_7059.webp">
+                <div class="font-medium text-black" id="text">Social-Growth</div>
+                <p class="text-black font-light mt-2" id="p">developing supportive social network, relationship and
+                  connection.
+              </div>
+              <div class="card mr-6" id="card1">
+                <img src="images/IMG_7058.webp">
+                <div class="font-medium text-black" id="text">Passive Income</div>
+                <p class="text-black font-light mt-2" id="p">increase wealth, achieve financial goals, managing
+                  expenses.
+              </div>
+            </div>
+            <h5 class="text-gray-400" id="copyright">Copyright © 2024, All Rights Reserved</h5>
+          </div>
+        </div>
+        </div>
+      </section>
+
+      <script src="script.js"></script>
+
+      <section id="testimonials">
+
+
+
+        <section id="hero">
+          
+        </section>
+        <h2 class="text-4xl font-bold text-center text-gray-600">
+          Benefits and save time with our <span class="text-purple-500">Tool-Kit</span>
+        </h2>
+        <br>
+        <br>
+        <div class="flex justify-center  mt-10" id="solution">
+            <!--Card-->
+            <div class="bg mr-8" id="bg">
+              <div class="img mt-2">
+                <img src="images/shop.webp" class="w-28 float-left  flex">
+              </div>
+              <div class="p-1.5">
+                <h5 class="font-medium text-gray-700">Purchase</h5>
+                <p class="font-light text-gray-500">
+                  Purchasing a digital product online eliminates the need for shipping, providing instant access and convenience.
+                </p>
+              </div>
+            </div>
+
+            <!--Card-->
+            <div class="bg mr-8" id="bg">
+              <div class="img mt-2">
+                <img src="images/ship.webp" class="w-28 float-left  flex">
+              </div>
+              <div class="p-1.5">
+                <h5 class="font-medium text-gray-700">World Wide</h5>
+                <p class="font-light text-gray-500">Selling a digital product worldwide eliminates the need for shipping, allowing for instant delivery to customers anywhere..
+                </p>
+              </div>
+            </div>
+
+            <!--Card-->
+            <div class="bg mr-8" id="bg">
+              <div class="img mt-2">
+                <img src="images/deal.webp" class="w-28 float-left  flex">
+              </div>
+              <div class="p-1.5">
+                <h5 class="font-medium text-gray-700">Offer</h5>
+                <p class="font-light text-gray-500">Providing a fair offer ensures customers receive great value andpricing, trust and satisfaction in every transaction.
+                </p>
+              </div>
+            </div>
+        </div>
+        <!--2-->
+        <br>
+        <div class="flex justify-center" id="solution">
+          <!--Card-->
+          <div class="bg mr-8" id="bg">
+            <div class="img mt-2">
+              <img src="images/conv.webp" class="w-28 float-left  flex">
+            </div>
+            <div class="p-1.5">
+              <h5 class="font-medium text-gray-700">Conversation</h5>
+              <p class="font-light text-gray-500">Easy to understand, with mutual respect and genuine interest, leaving both participants feeling connected.
+              </p>
+            </div>
+          </div>
+
+          <!--Card-->
+          <div class="bg mr-8" id="bg">
+            <div class="img mt-2">
+              <img src="images/time.webp" class="w-28 float-left  flex">
+            </div>
+            <div class="p-1.5">
+              <h5 class="font-medium text-gray-700">Save Time</h5>
+              <p class="font-light text-gray-500">
+                Save your time by using our toolkits, designed to streamline your workflow and boost efficiency.
+              </p>
+            </div>
+          </div>
+
+          <!--Card-->
+          <div class="bg mr-8" id="bg">
+            <div class="img mt-2">
+              <img src="images/IMG_7096.webp" class="w-28 float-left  flex">
+            </div>
+            <div class="p-1.5">
+              <h5 class="font-medium text-gray-700">Happy Clients</h5>
+              <p class="font-light text-gray-500">happy client after buying expresses satisfaction with our product/service, praising its effectiveness and value.
+              </p>
+            </div>
+          </div>
+      </div>
+        <div class="max-w-6xl px-5 mx-auto mt-32 text-center">
+          <h2 class="text-4xl font-bold text-center text-gray-600">
+            Industry Services
+          </h2>
+
+          <div class="my-16">
+            <a href="#" class="p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight">Get
+              Started</a>
+          </div>
+        </div>
+      </section>
+
+
+
+
+      <footer class="bg-purple-400">
+        <!-- Flex Container -->
+        <div
+          class="container flex flex-col-reverse justify-between px-6 py-10 mx-auto space-y-8 md:flex-row md:space-y-0">
+
+          <div
+            class="flex flex-col-reverse items-center justify-between space-y-12 md:flex-col md:space-y-0 md:items-start">
+            <div class="mx-auto my-6 text-center text-white md:hidden">
+              Copyright &copy; 2022, All Rights Reserved
+            </div>
+
+            <div>
+              <img src="img/logo-white.svg" class="h-8" alt="" />
+            </div>
+
+            <div class="flex justify-center space-x-4">
+
+              <a href="#">
+                <img src="img/icon-facebook.svg" alt="" class="h-8" />
+              </a>
+              <!-- Link 2 -->
+              <a href="#">
+                <img src="img/icon-youtube.svg" alt="" class="h-8" />
+              </a>
+              <!-- Link 3 -->
+              <a href="#">
+                <img src="img/icon-twitter.svg" alt="" class="h-8" />
+              </a>
+              <!-- Link 4 -->
+              <a href="#">
+                <img src="img/icon-pinterest.svg" alt="" class="h-8" />
+              </a>
+              <!-- Link 5 -->
+              <a href="#">
+                <img src="img/icon-instagram.svg" alt="" class="h-8" />
+              </a>
+            </div>
+          </div>
+
+          <!-- Input Container -->
+          <div class="flex flex-col justify-between">
+            <form>
+              <div class="flex space-x-3">
+              </div>
+            </form>
+            <div class="hidden text-white md:block">
+              Copyright &copy; 2024, All Rights Reserved
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+
+</html>
